@@ -2,6 +2,8 @@ import faqs from "../assets/data/faqs";
 import FaqItem from "../components/FaqItem";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
+import HeroImage from "../assets/images/heroImage.png";
+// girl-holding-book.png.png
 
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -39,7 +41,7 @@ const Home = () => {
           <div className='md:w-1/2 relative hero-image-wrapper m-2 md:m-6 lg:m-8'>
             <img
               className=' lg:mt-[-120px]'
-              src='https://s3-alpha-sig.figma.com/img/afbf/88ec/5151065bd3b1d1e6d913efcd76955c90?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BgdzgGvfFhFd3xXCv0psDP1h9fVO7CAjh0pdZs7CqQYvOApCcHbPW~vYgdq89BCBy4DpMZV0r-a1W3G8xIkqfs7Ck~m0Zyna3SaFdphW8ZnOaDsFEYvPG8WUpLC78ILTvRQ0yOWuFSgTCV3OCxuE6J5O5WOs~vg~HhjhW8~QHQZhedukpf9nzd8vPbRtVtU~gQRI3hDOilGpOlLdNjxxyfWlYaDxl~lJxkWxcmMmHkh22~Q8EmGLaDjzM9yt04PT3HwftWvybWYevHWWlK2FizA3y6-43yCOp~vGr46ynb0o-~9DqmgtCx6kuyunG5liArSiHdeZcux9nqWAu59Uiw__'
+              src={HeroImage}
               alt='Girl-holding-book'
             />
           </div>
