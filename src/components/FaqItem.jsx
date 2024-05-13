@@ -1,4 +1,3 @@
-// FaqItem.js
 const FaqItem = (props) => {
   // eslint-disable-next-line react/prop-types
   const { question, answer, isOpen, toggleAccordion } = props;
@@ -53,11 +52,9 @@ const FaqItem = (props) => {
       </div>
 
       {isOpen && (
-        // <div className='mt-4'>
         <p className='text-[12px] md:text-[20px] leading-4 md:leading-6 lg:text-[30px] lg:leading-7 font-[400] mt-5'>
           {answer}
         </p>
-        // </div>
       )}
     </li>
   );
