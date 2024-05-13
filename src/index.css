@@ -1,4 +1,22 @@
-:root {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6c1b; /* Orange background color */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%; /* Rounded corners */
+  z-index: -1; /* Behind the image */
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +83,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
